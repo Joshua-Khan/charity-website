@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Website</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <section>
+
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <div class="social-links">
+                    <p>Follow us on:</p>
+                    <div class="social-links-icons">
+                        <img src="assets/SVG/twitter.svg" alt="twitter icon">
+                        <img src="assets/SVG/facebook.svg" alt="facebook icon">
+                        <img src="assets/SVG/instagram.svg" alt="instagram icon">
+                        <img src="assets/SVG/whatsapp.svg" alt="whatsapp icon">
+                    </div>
+                </div>
+
+                <div class="contact-info">
+                    <p><img src="assets/SVG/envelope.svg" alt="envelope icon"> Email: Josh@example.com</p>
+                    <p><img src="assets/SVG/telephone.svg" alt="phone icon"> Tel: 0123456789</p>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Navbar -->
+            <nav class="navbar">
+                <img id="logo" src="assets/Images/british-library-gTV2osuOsJc-unsplash.jpg" alt="project-logo" height="100px">
+
+                <button class="menu-toggle" onclick="toggleMenu()" aria-controls="navbar-list" aria-expanded="false">☰</button>
+
+                <ul class="navbar-list" id="navbar-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Project</a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">› Nourishment</a></li>
+                            <li><a href="#">› Education</a></li>
+                            <li><a href="#">› Water</a></li>
+                            <li><a href="#">› Electricity</a></li>
+                            <li><a href="#">› Sanitary</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">Page</a></li>
+                    <li><a href="#">Short Codes</a></li>
+                </ul>
+
+                <button id="navbar-button" aria-disabled="true">Donate</button>
+            </nav>
+            <!-- Navbar End -->
+
+        </section>
+    </header>
+    <!-- HEADER END -->
+
+
+    <!-- CAROUSEL -->
+    <section class="carousel-section">
+        <img class="carousel-left-button" src="assets/SVG/arrow-left.svg" alt="left button" onclick="prevBtn()">
+
+        <div class="slider">
+            <img src="assets/Images/_c1200.webp" alt="children" loading="eager">
+            <img src="assets/Images/_a1200.webp" alt="children" loading="eager">
+            <img src="assets/Images/_b1200.webp" alt="children" loading="eager">
+        </div>
+
+        <img class="carousel-right-button" src="assets/SVG/arrow-right.svg" alt="right button" onclick="nextBtn()">
+    </section>
+    <!-- CAROUSEL END -->
+
+
+    <!-- OUR CAUSES -->
+    <section class="our-causes-section">
+        <div class="section-head">
+            <h2 class="section-title">OUR <span class="highlight-causes">CAUSES</span></h2>
+            <img class="section-divider" src="assets/Images/cross-line.png" loading="lazy" alt="divider">
+            <p class="section-description">Our charity helps those who have no hope</p>
+        </div>
+
+        <div class="causes-wrapper">
+
+            <div class="cause-card">
+                <img class="cause-image" src="assets/Images/_b.jpg" loading="lazy" alt="slum children">
+                <h3 class="cause-title">Education</h3>
+                <p class="cause-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cause-card-button" aria-disabled="true">Donate</button>
+            </div>
+
+            <div class="cause-card">
+                <img class="cause-image" src="assets/Images/_a.jpg" loading="lazy" alt="slum children">
+                <h3 class="cause-title">Bring Electric & Light</h3>
+                <p class="cause-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cause-card-button" aria-disabled="true">Donate</button>
+            </div>
+
+            <div class="cause-card">
+                <img class="cause-image" src="assets/Images/_c.jpg" loading="lazy" alt="slum children">
+                <h3 class="cause-title">Water Carrier Items</h3>
+                <p class="cause-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="cause-card-button" aria-disabled="true">Donate</button>
+            </div>
+
+        </div>
+    </section>
+    <!-- OUR CAUSES END -->
+
+
+    <!-- help-section -->
+        <section class="help-section">
+            <h2 class="help-title">HOW CAN YOU HELP US?</h2>
+            <p class="help-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste obcaecati tempore
+                quaerat fugiat
+                exercitationem facilis, architecto consectetur labore.</p>
+
+            <div class="help-option">
+                <div class="help-card help-donate">
+                    <h3 class="help-heading"><img src="assets/SVG/currency-dollar.svg" alt="dollar icon">DONATE</h3>
+                    <p class="help-description">Lorem ipsum dolor sit amet, risus adipiscing elit. Praesent laoreet
+                        condimentum quam, sit amet
+                        congue
+                        risus lobortis quis.</p>
+                    <button class="help-button" aria-disabled="true">LEARN MORE</button>
+                </div>
+
+                <div class="help-card help-csr">
+                    <h3 class="help-heading"><img src="assets/SVG/search.svg" alt="dollar icon">SEARCH FOR CSR</h3>
+                    <p class="help-description">Lorem ipsum dolor sit amet, risus adipiscing elit. Praesent laoreet
+                        condimentum quam, sit amet
+                        congue
+                        risus lobortis quis.</p>
+                    <button class="help-button" aria-disabled="true">LEARN MORE</button>
+                </div>
+
+                <div class="help-card help-volunteer">
+                    <h3 class="help-heading"><img src="assets/SVG/person.svg" alt="dollar icon">VOLUNTEER</h3>
+                    <p class="help-description">Lorem ipsum dolor sit amet, risus adipiscing elit. Praesent laoreet
+                        condimentum quam, sit amet
+                        congue
+                        risus lobortis quis.</p>
+                    <button class="help-button" aria-disabled="true">LEARN MORE</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- help-section-end -->
+
+    <!-- gallery-section -->
+        <section class="gallery-section">
+            <h2 class="gallery-title">OUR <span class="highlight-causes">GALLERY</span></h2>
+            <img class="section-divider" src="assets/Images/cross-line.png" alt="horizontal line">
+            <p class="gallery-description">We create events aiming to pear to the voice for children and gather for
+                support. <br>
+                Please update with our events and confirm you presence.</p>
+            <nav class="gallery-navbar">
+                <ul>
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Charity</a></li>
+                    <li><a href="#">Nature</a></li>
+                    <li><a href="#">Wildlife</a></li>
+                    <li><a href="#">Children</a></li>
+                    <li><a href="#">Video</a></li>
+                </ul>
+            </nav>
+            <div class="gallery-grid">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+                <img src="assets/Images/_c.jpg" loading="lazy" alt="images of blessed children">
+            </div>
+        </section>
+        <!-- gallery-section-end -->
+
+
+    <!-- EVENT SECTION -->
+    <section class="upcoming-event">
+        <img class="event-svg" src="assets/SVG/calendar-check.svg" alt="calendar icon">
+        <h3 class="event-title">
+            Upcoming Event
+            <p class="event-description">School Of Creativity</p>
+        </h3>
+    </section>
+    <!-- EVENT SECTION END -->
+
+
+    <!-- VOLUNTEERS -->
+    <section class="volunteer-section">
+        <div class="volunteer-title">OUR <span class="highlight-causes">VOLUNTEER</span></div>
+        <img class="section-divider" src="assets/Images/cross-line.png" loading="lazy" alt="divider">
+
+        <div class="volunteer-description">
+            We create events aiming to support the voice for children.
+        </div>
+
+        <div class="volunteer-card">
+
+            <div class="volunteer">
+                <img src="assets/Images/prof-photo.jpg" loading="lazy" alt="volunteer">
+                <div class="volunteer-name">Henry Vicks</div>
+                <small class="volunteer-post">President</small>
+            </div>
+
+            <div class="volunteer">
+                <img src="assets/Images/prof-photo.jpg" loading="lazy" alt="volunteer">
+                <div class="volunteer-name">James William</div>
+                <small class="volunteer-post">Vice-President</small>
+            </div>
+
+            <div class="volunteer">
+                <img src="assets/Images/prof-photo.jpg" loading="lazy" alt="volunteer">
+                <div class="volunteer-name">Erick Gomes</div>
+                <small class="volunteer-post">Secretary</small>
+            </div>
+
+            <div class="volunteer">
+                <img src="assets/Images/prof-photo.jpg" loading="lazy" alt="volunteer">
+                <div class="volunteer-name">Edward Cullens</div>
+                <small class="volunteer-post">Treasurer</small>
+            </div>
+
+        </div>
+    </section>
+    <!-- VOLUNTEERS END -->
+
+
+    <!-- testimonial-section -->
+        <section class="testimonial-section">
+            <img class="carousel-left-button" src="assets/SVG/arrow-left.svg" alt="left navigation button"
+                onclick="prevButton()">
+            <img class="carousel-right-button" src="assets/SVG/arrow-right.svg" alt="right navigation button"
+                onclick="nextButton()">
+            <h2 class="testimonial-title">WHAT PEOPLE SAY</h2>
+            <img class="section-divider" src="assets/Images/cross-line.png" alt="horizontal line">
+            <div class="testimonial-image"></div>
+            <hr>
+
+
+            <div class="testimonial-wrapper">
+
+                <div class="testimonials testimony-3">
+                    <!-- <img src="./Images/_a.jpg" alt="image of a person"> -->
+                    <div class="testimony">"Amazing service! Highly recommend."</div>
+                    <h3>Angela Mary Mcbrady</h3>
+                    <p>CEO</p>
+                </div>
+
+                <div class="testimonials testimony-1">
+                    <!-- <img src="./Images/_a.jpg" alt="image of a person"> -->
+                    <div class="testimony">"Great experience and wonderful team!"</div>
+                    <h3>Joshua Williams</h3>
+                    <p>Director</p>
+                </div>
+
+                <div class="testimonials testimony-2">
+                    <!-- <img src="./Images/_a.jpg" alt="image of a person"> -->
+                    <div class="testimony">"They exceeded our expectations!"</div>
+                    <h3>John Vicks</h3>
+                    <p>Manager</p>
+                </div>
+
+            </div>
+
+        </section>
+        <!-- testimony-section-end -->
+
+
+    <!-- BLOGS -->
+    <section class="blog-section">
+
+        <h2 class="blog-section-title">LATEST FROM <span class="highlight-causes">BLOGS</span></h2>
+        <img class="section-divider" src="assets/Images/cross-line.png" alt="divider">
+        <p class="blog-section-description">We create events aiming to support children...</p>
+
+        <section class="latest-blogs">
+
+            <div class="blog-card">
+                <img src="assets/Images/blog-3.jpg" loading="lazy" alt="blog image">
+                <div class="blog-date">24 May</div>
+
+                <div class="blog-info">
+                    <div class="admin"><img src="assets/SVG/person-fill.svg" alt="person"> By: Admin</div>
+                    <div class="comment">
+                        <img src="assets/SVG/suit-heart-fill.svg" alt="heart"> 15
+                        <img src="assets/SVG/chat-fill.svg" alt="chat"> 15
+                    </div>
+                </div>
+
+                <hr>
+                <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipicing elit.</p>
+                <a href="#">Read More...</a>
+            </div>
+
+            <div class="blog-card">
+                <img src="assets/Images/blog-1.jpg" loading="lazy" alt="blog image">
+                <div class="blog-date">24 May</div>
+
+                <div class="blog-info">
+                    <div class="admin"><img src="assets/SVG/person-fill.svg" alt="person"> By: Admin</div>
+                    <div class="comment">
+                        <img src="assets/SVG/suit-heart-fill.svg" alt="heart"> 15
+                        <img src="assets/SVG/chat-fill.svg" alt="chat"> 15
+                    </div>
+                </div>
+
+                <hr>
+                <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipicing elit.</p>
+                <a href="#">Read More...</a>
+            </div>
+
+            <div class="blog-card">
+                <img src="assets/Images/blog-2.jpg" loading="lazy" alt="blog image">
+                <div class="blog-date">24 May</div>
+
+                <div class="blog-info">
+                    <div class="admin"><img src="assets/SVG/person-fill.svg" alt="person"> By: Admin</div>
+                    <div class="comment">
+                        <img src="assets/SVG/suit-heart-fill.svg" alt="heart"> 15
+                        <img src="assets/SVG/chat-fill.svg" alt="chat"> 15
+                    </div>
+                </div>
+
+                <hr>
+                <h3 class="blog-title">Lorem ipsum dolor sit amet</h3>
+                <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipicing elit.</p>
+                <a href="#">Read More...</a>
+            </div>
+
+        </section>
+
+    </section>
+    <!-- BLOG SECTION END -->
+
+
+    <!-- SPONSORS -->
+    <section class="sponsors-section">
+        <h2 class="sponsor-title">OUR <span class="highlight-causes">SPONSORS</span></h2>
+        <img class="section-divider" src="assets/Images/cross-line.png" alt="divider">
+
+        <div class="sponsors">
+            <img src="assets/Images/sponsor-1.jpg" loading="lazy" alt="sponsor">
+            <img src="assets/Images/sponsor-2.jpg" loading="lazy" alt="sponsor">
+            <img src="assets/Images/sponsor-3.jpg" loading="lazy" alt="sponsor">
+            <img src="assets/Images/sponsor-4.jpg" loading="lazy" alt="sponsor">
+            <img src="assets/Images/sponsor-6.jpg" loading="lazy" alt="sponsor">
+            <img src="assets/Images/sponsor-5.jpg" loading="lazy" alt="sponsor">
+        </div>
+    </section>
+    <!-- SPONSORS END -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <section class="footer-section">
+
+            <div class="footer-top">
+
+                <div class="about-us-section">
+                    <h2>ABOUT US</h2>
+                    <hr class="underline">
+
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+                    <h2>Contact Us</h2>
+                    <hr class="underline">
+
+                    <p>Phone: 012345678</p>
+                    <p>Email: joshua123@gmail.com</p>
+                    <p>Address: 123 Ave, Parker's Road</p>
+                </div>
+
+                <div class="project-section">
+                    <h2>OUR PROJECTS</h2>
+                    <hr class="underline">
+                    <ul>
+                        <li>Water Surve</li>
+                        <li>Education</li>
+                        <li>Treatment</li>
+                        <li>Nutrition</li>
+                        <li>Shelter</li>
+                        <li>Electricity</li>
+                    </ul>
+                </div>
+
+                <div class="quick-link-section">
+                    <h2>QUICK LINK</h2>
+                    <hr class="underline">
+                    <ul>
+                        <li>Causes</li>
+                        <li>Projects</li>
+                        <li>Gallery</li>
+                        <li>Terms of use</li>
+                        <li>Legal disclaimer</li>
+                        <li>Privacy policy</li>
+                    </ul>
+                </div>
+
+                <div class="newsletter-section">
+                    <h2>NEWS LETTER</h2>
+                    <hr class="underline">
+
+                    <p>Select your newsletters and click "Subscribe".</p>
+
+                    <input type="email" placeholder="Email Address">
+                    <button id="newsletter-button" aria-disabled="true">Submit</button>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-credit">2025 • Made with ❤️ by Joshua</div>
+
+                <div class="footer-social-links">
+                    <img src="assets/SVG/twitter.svg" alt="twitter">
+                    <img src="assets/SVG/facebook.svg" alt="facebook">
+                    <img src="assets/SVG/instagram.svg" alt="instagram">
+                    <img src="assets/SVG/whatsapp.svg" alt="whatsapp">
+                </div>
+            </div>
+
+        </section>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <!-- Script -->
+    <script src="js/index.js" defer></script>
+
+</body>
+</html>
